@@ -1,0 +1,39 @@
+2 full nodes, 3 preemptible nodes
+
+Execution times svd:
+[32.121683835983276, 23.33402419090271, 20.372668981552124, 20.15979790687561, 20.07334804534912, 21.430482149124146, 19.454498052597046, 21.0326669216156, 19.658002138137817, 19.538650035858154]
+
+Execution times pca:
+[8.680815935134888, 5.771799087524414, 5.103301048278809, 4.248089075088501, 4.752786874771118, 4.983352899551392, 5.640420913696289, 5.179481029510498, 4.596297979354858, 4.435721158981323]
+
+19/05/27 14:53:11 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@67f551e2{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [f3c8b5d3baf541f3911296d612f36062] finished successfully.
+driverControlFilesUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/f3c8b5d3baf541f3911296d612f36062/
+driverOutputResourceUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/f3c8b5d3baf541f3911296d612f36062/driveroutput
+jobUuid: e0d028eb-8729-3bfe-8f70-e7b27b4a949d
+placement:
+  clusterName: cluster-6815
+  clusterUuid: b88a0663-f9c8-40de-a06f-48c66f96844b
+pysparkJob:
+  fileUris:
+  - gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/f3c8b5d3baf541f3911296d612f36062/staging/spark_svd_pca_job.py
+reference:
+  jobId: f3c8b5d3baf541f3911296d612f36062
+  projectId: daring-pilot-241307
+status:
+  state: DONE
+  stateStartTime: '2019-05-27T14:53:13.600Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-27T14:48:04.243Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-27T14:48:04.294Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-27T14:48:04.597Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: 
