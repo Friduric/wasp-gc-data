@@ -34,7 +34,7 @@ import time
 with open('mycielskian3.pickle', 'rb') as file:
     # The protocol version used is detected automatically, so we do not
     # have to specify it.
-    matrix = pickle.load(file)
+    matrix = pickle.load(file, protocol=2)
 
 print("Pickled")
 
