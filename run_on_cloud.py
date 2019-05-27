@@ -1,0 +1,1 @@
+gcloud dataproc jobs submit pyspark --cluster cluster-6815 --region europe-north1 --files=gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian10.pickle ~/wasp-gc-data/spark_svd_pca_job.py

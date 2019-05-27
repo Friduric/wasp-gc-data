@@ -1,7 +1,7 @@
 import h5py
 import pickle
 
-files = ["mycielskian10", "mycielskian10"]
+files = ["mycielskian10", "mycielskian10", "Goodwin_010", "Goodwin_013"]
 
 for file_n in files:
     file_name = file_n + '.mat'

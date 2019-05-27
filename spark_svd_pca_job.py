@@ -11,18 +11,21 @@ from pyspark.mllib.linalg.distributed import RowMatrix
 
 import time
 
-with open('mycielskian10.pickle', 'rb') as file:
+with open('Goodwin_010.pickle', 'rb') as file:
     # The protocol version used is detected automatically, so we do not
     # have to specify it.
     matrix = pickle.load(file)
 
 print("Pickled")
-a = 767
-#a = 3
+#a = 767
+#a = 5
+
+a = 1182
+#a = 1965
 
 spark = SparkSession \
     .builder \
-    .appName("PythonPi") \
+    .appName("PythonSvdPca") \
     .getOrCreate()
 
 data = matrix[0]
@@ -45,22 +48,17 @@ for i in range(10):
     delta = stop - start
     svd_times.append(delta)
 
-# Run svd computations
+# Run pca computations
 for i in range(10):
     start = time.time()
-    svd = mat.computeSVD(5, computeU=True)
+    pca = mat.computePrincipalComponents(4)
     stop = time.time()
     delta = stop - start
-    svd_times.append(delta)
+    pca_times.append(delta)
 
-f = open("spark_svd_execution_time.txt", "a")
-f.write("Execution time: %.2f" % delta)
-f.close()
-print("Execution time: %.2f" % delta)
-
-#U = svd.U
-#s = svd.s
-#V = svd.V
-#collected = U.rows.collect()
+print("Execution times svd:")
+print(svd_times)
+print("Execution times pca:")
+print(pca_times)
 
 spark.stop()
