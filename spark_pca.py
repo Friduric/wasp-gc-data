@@ -31,7 +31,7 @@ import time
 
 
 #with open('gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian3.pickle', 'rb') as file:
-with open('file:///home/prantare/wasp-gc-data/mycielskian3.pickle', 'rb') as file:
+with open('mycielskian3.pickle', 'rb') as file:
     # The protocol version used is detected automatically, so we do not
     # have to specify it.
     matrix = pickle.load(file)
