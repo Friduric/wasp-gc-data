@@ -1,9 +1,4 @@
-#import h5py
-
 import pickle
-
-#from pyspark import SparkContext
-#from pyspark.mllib.recommendation import ALS, MatrixFactorizationModel, Rating
 
 from pyspark.sql import SparkSession
 from pyspark.mllib.linalg import Matrices
@@ -11,23 +6,19 @@ from pyspark.mllib.linalg.distributed import RowMatrix
 
 import time
 
+# Load matrix properties
 with open('Goodwin_010.pickle', 'rb') as file:
-    # The protocol version used is detected automatically, so we do not
-    # have to specify it.
     matrix = pickle.load(file)
-
 print("Pickled")
-#a = 767
-#a = 5
 
-a = 1182
-#a = 1965
-
+# Start Spark session
 spark = SparkSession \
     .builder \
     .appName("PythonSvdPca") \
     .getOrCreate()
 
+# Create Spark row matrix based on matrix properties
+a = 1182
 data = matrix[0]
 ir = matrix[1]
 jc = matrix[2]
@@ -37,6 +28,7 @@ A = sparse_matrix.toArray()
 dist_data = spark.sparkContext.parallelize(A)
 mat = RowMatrix(dist_data)
 
+# Perform SVD and PCA computations oin the matrix
 svd_times = []
 pca_times = []
 
