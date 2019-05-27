@@ -29,7 +29,7 @@ import time
 #    # Pickle the 'data' dictionary using the highest protocol available.
 #    pickle.dump(matrix, file, pickle.HIGHEST_PROTOCOL)
 
-with open('mycielskian3.pickle', 'rb') as file:
+with open('~/wasp-gc-data/mycielskian3.pickle', 'rb') as file:
     # The protocol version used is detected automatically, so we do not
     # have to specify it.
     matrix = pickle.load(file)
