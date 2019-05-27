@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70caf31c-ca7e-473f-927c-f11af9968e4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pickler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark_pca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spark_svd.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark_svd.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +38,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1793" />
+          <entry key="py" value="1796" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1785" />
+          <entry key="Python" value="1788" />
           <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
@@ -102,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark_svd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="272">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#14#27#0" expanded="true" />
               </folding>
@@ -258,8 +255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_svd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#14#27#0" expanded="true" />
           </folding>
