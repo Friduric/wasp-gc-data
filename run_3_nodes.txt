@@ -1,0 +1,39 @@
+3 full nodes
+
+Execution times svd:
+[35.67397689819336, 19.79287600517273, 16.477819204330444, 16.538218021392822, 16.248167991638184, 17.59150505065918, 16.386842012405396, 17.32415199279785, 15.898189067840576, 15.287463188171387]
+
+Execution times pca:
+[6.3678200244903564, 5.059544086456299, 5.156126022338867, 4.715986013412476, 5.4399449825286865, 4.788336992263794, 4.5235888957977295, 4.272072076797485, 4.15265417098999, 3.959594964981079]
+
+19/05/27 14:43:16 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@f7808a0{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [07d5875c156f425ebe123d613d773c78] finished successfully.
+driverControlFilesUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/07d5875c156f425ebe123d613d773c78/
+driverOutputResourceUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/07d5875c156f425ebe123d613d773c78/driveroutput
+jobUuid: 3c1c359e-03cd-330b-bd1c-58bfdef929c0
+placement:
+  clusterName: cluster-6815
+  clusterUuid: b88a0663-f9c8-40de-a06f-48c66f96844b
+pysparkJob:
+  fileUris:
+  - gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/07d5875c156f425ebe123d613d773c78/staging/spark_svd_pca_job.py
+reference:
+  jobId: 07d5875c156f425ebe123d613d773c78
+  projectId: daring-pilot-241307
+status:
+  state: DONE
+  stateStartTime: '2019-05-27T14:43:18.720Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-27T14:38:48.309Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-27T14:38:48.364Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-27T14:38:54.721Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-6815-m:8088/proxy/application_1558947292780_0009/

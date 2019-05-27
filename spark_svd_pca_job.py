@@ -34,6 +34,7 @@ pca_times = []
 
 # Run svd computations
 for i in range(10):
+    print("Starting SVD iteration %s" % i)
     start = time.time()
     svd = mat.computeSVD(5, computeU=True)
     stop = time.time()
@@ -42,6 +43,7 @@ for i in range(10):
 
 # Run pca computations
 for i in range(10):
+    print("Starting PCA iteration %s" % i)
     start = time.time()
     pca = mat.computePrincipalComponents(4)
     stop = time.time()
