@@ -1,4 +1,5 @@
-import h5py
+#import h5py
+import pickle
 
 #from pyspark import SparkContext
 #from pyspark.mllib.recommendation import ALS, MatrixFactorizationModel, Rating
@@ -9,23 +10,43 @@ from pyspark.mllib.linalg.distributed import RowMatrix
 
 import time
 
-file_name = 'mycielskian3.mat'
-f = h5py.File(file_name, 'r')
+#file_name = 'mycielskian3.mat'
+#f = h5py.File(file_name, 'r')
 
-if file_name == 'mycielskian3.mat':
-    a = 5
-else:
-    a = 767
+#if file_name == 'mycielskian3.mat':
+#    a = 5
+#else:
+#    a = 767
+
+#group = f['Problem']
+#data = group['A']['data'][()]
+#ir = group['A']['ir'][()]
+#jc = group['A']['jc'][()]
+
+#matrix = [data, ir, jc]
+
+#with open('mycielskian3.pickle', 'wb') as file:
+#    # Pickle the 'data' dictionary using the highest protocol available.
+#    pickle.dump(matrix, file, pickle.HIGHEST_PROTOCOL)
+
+with open('mycielskian3.pickle', 'rb') as file:
+    # The protocol version used is detected automatically, so we do not
+    # have to specify it.
+    matrix = pickle.load(file)
+
+print("Pickled")
+
+a = 5
+#a = 767
 
 spark = SparkSession \
     .builder \
     .appName("PythonPi") \
     .getOrCreate()
 
-group = f['Problem']
-data = group['A']['data'][()]
-ir = group['A']['ir'][()]
-jc = group['A']['jc'][()]
+data = matrix[0]
+ir = matrix[1]
+jc = matrix[2]
 
 sparse_matrix = Matrices.sparse(a, a, jc, ir, data)
 A = sparse_matrix.toArray()
