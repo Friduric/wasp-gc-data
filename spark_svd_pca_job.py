@@ -7,7 +7,7 @@ from pyspark.mllib.linalg.distributed import RowMatrix
 import time
 
 # Load matrix properties
-with open('Goodwin_010.pickle', 'rb') as file:
+with open('mycielskian11.pickle', 'rb') as file:
     matrix = pickle.load(file)
 print("Pickled")
 
@@ -18,7 +18,7 @@ spark = SparkSession \
     .getOrCreate()
 
 # Create Spark row matrix based on matrix properties
-a = 1182
+a = 1535
 data = matrix[0]
 ir = matrix[1]
 jc = matrix[2]

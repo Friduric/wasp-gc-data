@@ -3,7 +3,7 @@ import pickle
 
 # Load matrices on hdf5 format and store in pickle format
 
-files = ["mycielskian10", "mycielskian10", "Goodwin_010", "Goodwin_013"]
+files = ["mycielskian10", "mycielskian10", "mycielskian11", "Goodwin_010", "Goodwin_013"]
 
 for file_n in files:
     file_name = file_n + '.mat'
