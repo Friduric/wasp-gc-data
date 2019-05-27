@@ -26,8 +26,8 @@ import time
 #matrix = [data, ir, jc]
 
 #with open('mycielskian3.pickle', 'wb') as file:
-#    # Pickle the 'data' dictionary using the highest protocol available.
-#    pickle.dump(matrix, file, pickle.HIGHEST_PROTOCOL)
+    # Pickle the 'data' dictionary using the highest protocol available.
+#    pickle.dump(matrix, file, protocol=2)#pickle.HIGHEST_PROTOCOL)
 
 
 #with open('gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian3.pickle', 'rb') as file:
