@@ -1,0 +1,75 @@
+2 full, 4 preemtable nodes
+
+Execution times svd:
+[31.541428089141846, 19.67282509803772, 15.562182903289795, 15.974431991577148, 15.989508152008057, 16.88449192047119, 16.356063842773438, 16.662007093429565, 14.748564004898071, 15.56258511543274]
+
+Execution times pca:
+[5.5722877979278564, 4.696692943572998, 4.859127044677734, 4.160127878189087, 4.0715789794921875, 4.248111963272095, 4.043802976608276, 4.120073080062866, 4.400238037109375, 4.947695016860962]
+
+19/05/27 14:15:55 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@280a69a6{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [e6351b36b32547389761030df2ee40b8] finished successfully.
+driverControlFilesUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/e6351b36b32547389761030df2ee40b8/
+driverOutputResourceUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/e6351b36b32547389761030df2ee40b8/driveroutput
+jobUuid: c3edabd1-8a83-30f6-9161-09483bdc0da8
+placement:
+  clusterName: cluster-6815
+  clusterUuid: b88a0663-f9c8-40de-a06f-48c66f96844b
+pysparkJob:
+  fileUris:
+  - gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/e6351b36b32547389761030df2ee40b8/staging/spark_svd_pca_job.py
+reference:
+  jobId: e6351b36b32547389761030df2ee40b8
+  projectId: daring-pilot-241307
+status:
+  state: DONE
+  stateStartTime: '2019-05-27T14:15:57.969Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-27T14:11:45.035Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-27T14:11:45.100Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-27T14:11:45.469Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-6815-m:8088/proxy/application_1558947292780_0007/
+  
+Execution times svd:
+[30.090843200683594, 18.257041931152344, 15.811504125595093, 15.697295904159546, 14.877171993255615, 15.919510126113892, 14.798501968383789, 15.774847984313965, 13.892727136611938, 14.59357500076294]
+Execution times pca:
+[5.006887912750244, 4.559741020202637, 3.876228094100952, 4.379777908325195, 4.431730031967163, 3.872359037399292, 4.0320351123809814, 3.815732955932617, 4.115993022918701, 3.955965042114258]
+19/05/27 14:23:25 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@ae0ebec{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [d29690e22db84c95b6fb9a3fd0ef8929] finished successfully.
+driverControlFilesUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/d29690e22db84c95b6fb9a3fd0ef8929/
+driverOutputResourceUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/d29690e22db84c95b6fb9a3fd0ef8929/driveroutput
+jobUuid: 1c3c899f-13d6-38f8-8305-ae57fd10214c
+placement:
+  clusterName: cluster-6815
+  clusterUuid: b88a0663-f9c8-40de-a06f-48c66f96844b
+pysparkJob:
+  fileUris:
+  - gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-df0b072e-030f-4a8d-9eae-4572ba8d996c-europe-north1/google-cloud-dataproc-metainfo/b88a0663-f9c8-40de-a06f-48c66f96844b/jobs/d29690e22db84c95b6fb9a3fd0ef8929/staging/spark_svd_pca_job.py
+reference:
+  jobId: d29690e22db84c95b6fb9a3fd0ef8929
+  projectId: daring-pilot-241307
+status:
+  state: DONE
+  stateStartTime: '2019-05-27T14:23:27.985Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-27T14:19:28.096Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-27T14:19:28.150Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-27T14:19:28.467Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-6815-m:8088/proxy/application_1558947292780_0008/
