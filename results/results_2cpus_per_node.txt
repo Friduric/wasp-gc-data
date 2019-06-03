@@ -1,0 +1,159 @@
+2 full standard nodes:
+----------------------
+
+Execution times svd:
+[24.47728395462036, 10.762470960617065, 9.360445022583008, 9.297807931900024, 8.809758186340332, 9.87907099723816, 9.143058061599731, 9.490516901016235, 8.751528024673462, 8.777113914489746]
+Execution times pca:
+[3.9556400775909424, 3.3478360176086426, 3.0208020210266113, 3.1000888347625732, 3.6284029483795166, 3.080571174621582, 3.274963855743408, 3.1641528606414795, 3.331601858139038, 3.304213047027588]
+19/05/30 22:33:01 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@5d24a234{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [ba21f5e83f5541b1bbcdb2308fcc7fe4] finished successfully.
+driverControlFilesUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/c52043bf-034f-405a-8a05-be5af31cf069/jobs/ba21f5e83f5541b1bbcdb2308fcc7fe4/
+driverOutputResourceUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/c52043bf-034f-405a-8a05-be5af31cf069/jobs/ba21f5e83f5541b1bbcdb2308fcc7fe4/driveroutput
+jobUuid: 03aefcdc-50e2-337f-85de-8a27db0da927
+placement:
+  clusterName: cluster-1042
+  clusterUuid: c52043bf-034f-405a-8a05-be5af31cf069
+pysparkJob:
+  fileUris:
+  - gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/spark_svd_pca_job.py
+reference:
+  jobId: ba21f5e83f5541b1bbcdb2308fcc7fe4
+  projectId: nisse-project
+status:
+  state: DONE
+  stateStartTime: '2019-05-30T22:33:04.656Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-30T22:30:08.621Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-30T22:30:08.701Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-30T22:30:09.089Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-1042-m:8088/proxy/application_1559254815227_0001/
+
+
+3 full standard nodes:
+----------------------
+
+Execution times svd:
+[18.67506504058838, 10.99718713760376, 9.332097053527832, 9.11668086051941, 8.973895072937012, 9.998767137527466, 8.916234970092773, 9.735192060470581, 8.99279499053955, 9.142462015151978]
+Execution times pca:
+[3.4118008613586426, 3.231900930404663, 3.155571937561035, 3.104241132736206, 3.279749870300293, 3.229517936706543, 3.138296127319336, 3.631704092025757, 3.2880709171295166, 3.0956461429595947]
+19/05/30 22:38:56 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@4e834987{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [1dc575cfbeb14b0bbebb27039643e4fd] finished successfully.
+driverControlFilesUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/c52043bf-034f-405a-8a05-be5af31cf069/jobs/1dc575cfbeb14b0bbebb27039643e4fd/
+driverOutputResourceUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/c52043bf-034f-405a-8a05-be5af31cf069/jobs/1dc575cfbeb14b0bbebb27039643e4fd/driveroutput
+jobUuid: f853e9d8-3d04-3384-8253-241ca47b9fcd
+placement:
+  clusterName: cluster-1042
+  clusterUuid: c52043bf-034f-405a-8a05-be5af31cf069
+pysparkJob:
+  fileUris:
+  - gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/spark_svd_pca_job.py
+reference:
+  jobId: 1dc575cfbeb14b0bbebb27039643e4fd
+  projectId: nisse-project
+status:
+  state: DONE
+  stateStartTime: '2019-05-30T22:38:59.594Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-30T22:36:22.452Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-30T22:36:22.506Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-30T22:36:22.810Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-1042-m:8088/proxy/application_1559254815227_0002/
+
+
+2 full high-mem nodes:
+----------------------
+
+Execution times svd:
+[25.854040145874023, 11.084419965744019, 9.577297925949097, 9.371554136276245, 9.04636001586914, 9.766940832138062, 8.910305976867676, 9.262684106826782, 8.610005855560303, 8.575654983520508]
+Execution times pca:
+[4.016368865966797, 3.418325901031494, 3.4009318351745605, 3.318655014038086, 3.6958439350128174, 3.2481601238250732, 3.3515288829803467, 3.5360219478607178, 3.368454933166504, 3.43925404548645]
+19/05/30 22:53:02 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@37e1f807{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [06dd2567abce4d28874e86f08a8604d1] finished successfully.
+driverControlFilesUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/a9967fb3-98cf-4f4c-a3f6-aac6f800a7c9/jobs/06dd2567abce4d28874e86f08a8604d1/
+driverOutputResourceUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/a9967fb3-98cf-4f4c-a3f6-aac6f800a7c9/jobs/06dd2567abce4d28874e86f08a8604d1/driveroutput
+jobUuid: 9e68a876-d1b4-37d9-bc4e-fc78c7d272e4
+placement:
+  clusterName: cluster-fff3
+  clusterUuid: a9967fb3-98cf-4f4c-a3f6-aac6f800a7c9
+pysparkJob:
+  fileUris:
+  - gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/spark_svd_pca_job.py
+reference:
+  jobId: 06dd2567abce4d28874e86f08a8604d1
+  projectId: nisse-project
+status:
+  state: DONE
+  stateStartTime: '2019-05-30T22:53:07.063Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-30T22:50:03.256Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-30T22:50:03.321Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-30T22:50:03.643Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-fff3-m:8088/proxy/application_1559256270355_0001/
+
+
+2 full high-cpu nodes:
+----------------------
+
+Execution times svd:
+[23.40473699569702, 10.576480150222778, 9.275546073913574, 9.214131116867065, 8.96892786026001, 9.627201795578003, 9.214154958724976, 9.503830909729004, 8.574470043182373, 8.814279079437256]
+Execution times pca:
+[3.9897470474243164, 3.1598880290985107, 3.591996908187866, 3.644091844558716, 3.1156539916992188, 3.0603840351104736, 3.144700050354004, 3.283010959625244, 3.035750150680542, 3.1718909740448]
+19/05/30 23:06:07 INFO org.spark_project.jetty.server.AbstractConnector: Stopped Spark@54811c1{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+Job [e280d44093f34e7d9d3255395a4e76ac] finished successfully.
+driverControlFilesUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/46dd46a3-3a26-4a57-a478-7c49612c23be/jobs/e280d44093f34e7d9d3255395a4e76ac/
+driverOutputResourceUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/google-cloud-dataproc-metainfo/46dd46a3-3a26-4a57-a478-7c49612c23be/jobs/e280d44093f34e7d9d3255395a4e76ac/driveroutput
+jobUuid: 956ed7ee-2b16-3d4d-81d2-4a566fea1dc9
+placement:
+  clusterName: cluster-5bf6
+  clusterUuid: 46dd46a3-3a26-4a57-a478-7c49612c23be
+pysparkJob:
+  fileUris:
+  - gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/mycielskian11.pickle
+  mainPythonFileUri: gs://dataproc-3162f65d-05c2-464f-a0c9-743940640ae9-europe-north1/spark_svd_pca_job.py
+reference:
+  jobId: e280d44093f34e7d9d3255395a4e76ac
+  projectId: nisse-project
+status:
+  state: DONE
+  stateStartTime: '2019-05-30T23:06:08.527Z'
+statusHistory:
+- state: PENDING
+  stateStartTime: '2019-05-30T23:03:13.021Z'
+- state: SETUP_DONE
+  stateStartTime: '2019-05-30T23:03:13.072Z'
+- details: Agent reported job success
+  state: RUNNING
+  stateStartTime: '2019-05-30T23:03:13.422Z'
+yarnApplications:
+- name: PythonSvdPca
+  progress: 1.0
+  state: FINISHED
+  trackingUrl: http://cluster-5bf6-m:8088/proxy/application_1559257077857_0001/
+
