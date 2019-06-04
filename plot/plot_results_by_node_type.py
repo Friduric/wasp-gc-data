@@ -11,6 +11,9 @@ two_highcpu_nodes_2cpus_svd = np.array([23.40473699569702, 10.576480150222778, 9
 svd_means = [laptop_svd.mean(), two_standard_nodes_1cpus_svd.mean(), two_standard_nodes_2cpus_svd.mean(), two_highmem_nodes_2cpus_svd.mean(), two_highcpu_nodes_2cpus_svd.mean()]
 svd_stds = [laptop_svd.std(), two_standard_nodes_1cpus_svd.std(), two_standard_nodes_2cpus_svd.std(), two_highmem_nodes_2cpus_svd.std(), two_highcpu_nodes_2cpus_svd.std()]
 
+print(svd_means[0])
+print(svd_stds[0])
+
 # PCA
 laptop_pca = np.array([33.3845911026001, 33.41750454902649, 35.94286108016968, 34.068347692489624, 32.02819347381592, 33.09368062019348, 32.956276416778564, 34.742011308670044, 34.44196701049805, 35.271657943725586])
 two_standard_nodes_1cpus_pca = np.array([6.338209867477417, 4.991994142532349, 4.6073338985443115, 4.827978134155273, 4.975945949554443, 5.228058815002441, 4.5201239585876465, 4.331599950790405, 4.892102003097534, 5.45251202583313])
@@ -20,6 +23,9 @@ two_highcpu_nodes_2cpus_pca = np.array([3.9897470474243164, 3.1598880290985107, 
 
 pca_means = [laptop_pca.mean(), two_standard_nodes_1cpus_pca.mean(), two_standard_nodes_2cpus_pca.mean(), two_highmem_nodes_2cpus_pca.mean(), two_highcpu_nodes_2cpus_pca.mean()]
 pca_stds = [laptop_pca.std(), two_standard_nodes_1cpus_pca.std(), two_standard_nodes_2cpus_pca.std(), two_highmem_nodes_2cpus_pca.std(), two_highcpu_nodes_2cpus_pca.std()]
+
+print(pca_means[0])
+print(pca_stds[0])
 
 x = np.arange(5)
 
